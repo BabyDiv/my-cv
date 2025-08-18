@@ -57,7 +57,7 @@ body {
 
 .paragraph {
   margin: 0;
-  font-size: 56px;
+  font-size: 52px;
   line-height: 1.1;
 
   @media (min-width: 768px) {
@@ -240,5 +240,25 @@ body {
 
   @media (min-width: 768px) {
     font-size: 48px;
+  }
+}
+
+.kitty {
+  width: 220px;
+  height: 220px;
+
+  @media (min-width: 768px) {
+    width: 259px;
+    height: 259px;
+  }
+}
+
+.dog {
+  width: 220px;
+  height: auto;
+
+  @media (min-width: 768px) {
+    width: 259px;
+    height: 215px;
   }
 }

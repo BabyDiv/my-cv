@@ -29,7 +29,7 @@ export default function Home() {
             <p className="uppercase text-[var(--color-font-primary)] font-[400] tracking-[-0.1em] paragraph">Developer</p>
           </div>
           <div>
-            <img src="/kitty.svg" alt="kitty"></img>
+            <img src="/kitty.svg" alt="kitty" className="kitty"></img>
           </div>
         </section>
         < Footer />
