@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Header from "@/components/Header";
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function Home() {
 
@@ -24,12 +25,12 @@ export default function Home() {
           <div>
             <h1 className="sr-only">My CV - Frontend Developer</h1>
             <p className="uppercase text-[var(--color-font-primary)] font-[300] paragraph tracking-[-0.1em]">Hello,</p>
-            <p className="uppercase text-[var(--color-font-primary)] font-[900] tracking-[-0.1em] paragraph">I'<span className="italic">m</span> Inna |</p>
+            <p className="uppercase text-[var(--color-font-primary)] font-[900] tracking-[-0.1em] paragraph">I&apos;<span className="italic">m</span> Inna |</p>
             <p className="uppercase text-[var(--color-font-primary)] font-[400] tracking-[-0.1em] paragraph">Frontend -</p>
             <p className="uppercase text-[var(--color-font-primary)] font-[400] tracking-[-0.1em] paragraph">Developer</p>
           </div>
           <div>
-            <img src="/kitty.svg" alt="kitty"></img>
+            <Image src="/kitty.svg" alt="kitty" />
           </div>
         </section>
         < Footer />

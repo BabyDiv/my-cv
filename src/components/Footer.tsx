@@ -1,12 +1,17 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link';
 
 export default function Footer() {
   const pathname = usePathname();
   const isAboutPage = pathname === '/about';
   const isContactsPage = pathname === '/contacts';
+  const router = useRouter();
+  const routes = ['/', '/about', '/projects', '/contacts'];
+  const currentIndex = routes.indexOf(pathname);
+  const nextIndex = (currentIndex + 1) % routes.length;
+  const nextRoute = routes[nextIndex];
 
   return (
     <footer className="w-full">
@@ -75,7 +80,7 @@ export default function Footer() {
         )
         }
 
-        <Link href="/">
+        {/* <Link href="/">
           <svg
             width="51"
             height="51"
@@ -92,7 +97,26 @@ export default function Footer() {
               strokeLinejoin="round"
             />
           </svg>
-        </Link>
+        </Link> */}
+
+        <button onClick={() => router.push(nextRoute)} aria-label="Next page" className="border-none cursor-pointer bg-transparent">
+          <svg
+            width="51"
+            height="51"
+            viewBox="0 0 51 51"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="51" height="51" rx="25.5" fill="white" />
+            <path
+              d="M35.0354 25.2848L15.5356 25.282M35.0354 25.2848L26.6795 16.9265M35.0354 25.2848L26.6772 33.6407"
+              stroke="#DCD8EC"
+              strokeWidth="2.13"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       </div>
     </footer>
   );

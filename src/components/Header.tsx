@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Header({ onToggleTheme }: { onToggleTheme: () => void }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -112,7 +113,7 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
         </nav>
       )}
 
-        <img src="/switcher.svg" className="switcher cursor-pointer" alt="theme-switcher" onClick={onToggleTheme}></img>
+        <Image src="/switcher.svg" className="switcher cursor-pointer" alt="theme-switcher" onClick={onToggleTheme} />
       </div>
     </header>
   )

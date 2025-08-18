@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function ContactsContent() {
   return (
     <section className="flex justify-around contacts items-center">
@@ -9,7 +11,7 @@ export default function ContactsContent() {
         <p className="uppercase text-[var(--color-font-primary)] font-[400] tracking-[-0.1em] passage">You</p>
       </div>
       <div>
-        <img src="/dog.svg" alt="dog"></img>
+        <Image src="/dog.svg" alt="dog" />
       </div>
     </section>
   )
