@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-font-primary: #FFFFFF;
+}
+
+body {
+  font-family: 'Freigeist', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: 
+    url('/fonts/freigeist-light.woff2') format('woff2'),
+    url('/fonts/freigeist-light.woff') format('woff'),
+    url('/fonts/freigeist-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Freigeist';
+  src: 
+    url('/fonts/freigeist-medium.woff2') format('woff2'),
+    url('/fonts/freigeist-medium.woff') format('woff'),
+    url('/fonts/freigeist-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: 
+    url('/fonts/freigeist-bold.woff2') format('woff2'),
+    url('/fonts/freigeist-bold.woff') format('woff'),
+    url('/fonts/freigeist-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freigeist';
+  src: 
+    url('/fonts/freigeist-blackitalic.woff2') format('woff2'),
+    url('/fonts/freigeist-blackitalic.woff') format('woff'),
+    url('/fonts/freigeist-blackitalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  @media (min-width: 1064px) {
+    font-size: 96px;
+  }
+}
+
+.hero {
+  flex-direction: column;
+  margin-top: 12%;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    margin-top: 14%;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 7%;
+  }
+}
+
+.nav--desktop {
+  display: none;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  @media (min-width: 1064px) {
+    display: block;
+  }
+}
+
+.nav--mobile {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 100;
+
+  @media (min-width: 1064px) {
+    display: none;
+  }
+}
+
+.nav__list {
+  gap: 82px;
+  padding-left: 0;
+}
+
+.nav__link { 
+  position: relative;
+  padding-left: 16px;
+  transition: color 0.3s ease;
+
+  @media (min-width: 768px) {
+    font-size: 72px;
+  }
+}
+
+.nav__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav__link:hover::before {
+  opacity: 1;
+}
+
+.switcher {
+  display: none;
+
+  @media (min-width: 1064px) {
+    display: block;
+  }
+}
+
+.burger-menu {
+  display: flex;
+
+  @media (min-width: 1064px) {
+    display: none;
+  }
+}
+
+.about__text {
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1064px) {
+    font-size: 24px;
+  }
+}
+
+.contacts {
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.footer__title {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.footer__link {
+  font-size: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.passage {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1.1;
+
+  @media (min-width: 768px) {
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  @media (min-width: 1064px) {
+    font-size: 96px;
+  }
+}
