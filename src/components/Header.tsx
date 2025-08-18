@@ -15,7 +15,7 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
       document.body.classList.remove('overflow-hidden');
     };
   }, [isMenuOpen]);
-  
+
   return (
     <header className="w-full flex flex-row justify-between items-center">
       <div>
@@ -41,7 +41,9 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
           </li>
         </ul>
       </nav>
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-[16px]">
+        <img src="/switcher.svg" className="switcher cursor-pointer" alt="theme-switcher" onClick={onToggleTheme}></img>
+
         <button
           className="burger-menu flex flex-col justify-between w-[51px] h-[51px] focus:outline-none border-none bg-transparent cursor-pointer p-[0] z-[1000]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -124,7 +126,6 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
         </nav>
       )}
 
-        <img src="/switcher.svg" className="switcher cursor-pointer" alt="theme-switcher" onClick={onToggleTheme}></img>
       </div>
     </header>
   )

@@ -14,7 +14,7 @@ export default function ProjectsPage() {
 
   return (
     <main
-    className={`py-[20px] px-[32px] flex flex-col justify-between box-border min-h-screen w-full p-6 rounded-[32px] transition-colors duration-500`}
+    className={`py-[20px] px-[32px] flex flex-col justify-between box-border w-full min-h-[calc(100vh-20px)] p-6 rounded-[32px] transition-colors duration-500`}
     style={{
       backgroundImage: isDark
         ? `url('/background.png'), linear-gradient(to bottom, #121212 0%, #3a3a3a 100%)`

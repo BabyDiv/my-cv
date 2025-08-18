@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: ReactNode}) {
   return (
     <html lang="en">
-      <body className="relative">
+      <body className="relative m-10">
         { children }
       </body>
     </html>

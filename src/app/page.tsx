@@ -13,12 +13,16 @@ export default function Home() {
   }
 
   return (
-      <main className={`py-[20px] px-[32px] flex flex-col justify-between box-border h-screen w-full p-6 rounded-[32px] transition-colors duration-500
+      <main className={`py-[20px] px-[32px] x flex flex-col justify-between box-border w-full h-[calc(100vh-20px)] p-6 rounded-[32px] transition-colors duration-500
         ${isDark
           ? "bg-gradient-to-b from-[#121212] to-[#3a3a3a]"
           : "bg-gradient-to-b from-[#C5A9EE] to-[#E5E5E5]"
         }`}
       >
+
+        {/* h-screen */}
+        
+
         < Header onToggleTheme={toggleTheme} />
         <section className="hero flex justify-around items-center">
           <div>
