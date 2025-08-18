@@ -54,19 +54,19 @@ export default function Footer() {
               <h2 id="footer-nav-title-2" className="text-[var(--color-font-primary)] footer__title font-[400]">Social media</h2>
               <ul className="flex flex-col gap-[4px] list-none p-0 pl-[0]">
                 <li className="flex items-center gap-[2px]">
-                  <Link href="/about" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">instagram</Link>
+                  <Link href="https://www.instagram.com/_leah_07/" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]" target="_blank" rel="noopener noreferrer">instagram</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </li>
                 <li className="flex items-center gap-[2px]">
-                  <Link href="/projects" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">telegram</Link>
+                  <Link href="https://t.me/inna_statsenko" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]" rel="noopener noreferrer" target="_blank">telegram</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </li>
                 <li className="flex items-center gap-[2px]">
-                  <Link href="/contact" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">vkontakte</Link>
+                  <Link href="https://vk.com/aigneis" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]" rel="noopener noreferrer" target="_blank">vkontakte</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
