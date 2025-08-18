@@ -179,13 +179,13 @@ body {
   }
 }
 
-.footer__container {
+/* .footer__container {
   flex-direction: column;
 
   @media (min-width: 768px) {
     flex-direction: row;
   }
-}
+} */
 
 .footer__title {
   font-size: 16px;
