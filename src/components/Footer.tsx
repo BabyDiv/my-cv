@@ -51,19 +51,19 @@ export default function Footer() {
                 <li className="flex items-center gap-[2px]">
                   <Link href="/about" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">instagram</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" stroke-width="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </li>
                 <li className="flex items-center gap-[2px]">
                   <Link href="/projects" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">telegram</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" stroke-width="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </li>
                 <li className="flex items-center gap-[2px]">
                   <Link href="/contact" className="text-[var(--color-font-primary)] footer__link no-underline font-[400]">vkontakte</Link>
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" stroke-width="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.39 4.89262L3.13942 8.64934M10.39 4.89262L8.89262 9.61003M10.39 4.89262L5.67257 3.39526" stroke="white" strokeWidth="1.16657" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </li>
               </ul>

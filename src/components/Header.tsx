@@ -17,7 +17,7 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
           </li>
 
           <li className="cursor-pointer">
-            <a href="#" className="text-[var(--color-font-primary)] no-underline"> 
+            <a href="/projects" className="text-[var(--color-font-primary)] no-underline"> 
               My projects
             </a>
           </li>
@@ -100,13 +100,13 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
         <nav className="nav nav--mobile box-border h-full rounded-[32px] bg-gradient-to-b from-[#00A9FF] to-[#E5E5E5]">
           <ul className="flex flex-col justify-center items-center gap-[30px] list-none pl-[0]">
             <li className="text-center">
-              <a href="#" className="nav__link text-[var(--color-font-primary)] text-[52px] no-underline">About me</a>
+              <a href="/about" className="nav__link text-[var(--color-font-primary)] text-[42px] no-underline">About me</a>
             </li>
             <li className="text-center">
-              <a href="#" className="nav__link text-[var(--color-font-primary)] text-[52px] no-underline">My projects</a>
+              <a href="/projects" className="nav__link text-[var(--color-font-primary)] text-[42px] no-underline">My projects</a>
             </li>
             <li className="text-center">
-              <a href="#" className="nav__link text-[var(--color-font-primary)] text-[52px] no-underline">Contacts</a>
+              <a href="/contacts" className="nav__link text-[var(--color-font-primary)] text-[42px] no-underline">Contacts</a>
             </li>
           </ul>
         </nav>

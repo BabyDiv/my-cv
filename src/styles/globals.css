@@ -209,3 +209,36 @@ body {
     font-size: 96px;
   }
 }
+
+.projects__list {
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: 1064px) {
+    flex-direction: row;
+  }
+}
+
+.projects__text {
+  font-size: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.projects__tools {
+  font-size: 10px;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.projects__title {
+  font-size: 32px;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
