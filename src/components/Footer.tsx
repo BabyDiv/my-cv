@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <footer className="footer w-full">
-      <div className="footer__container flex w-full justify-between items-end">
+      <div className="footer__container flex w-full justify-between items-end gap-[6px]">
         {isAboutPage ? (
           <svg
             width="123"

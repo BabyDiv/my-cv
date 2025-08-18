@@ -96,7 +96,7 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
         </button>
 
         {isMenuOpen && (
-        <nav className="nav nav--mobile box-border h-full rounded-[32px] bg-gradient-to-b from-[#00A9FF] to-[#E5E5E5]">
+        <nav className="nav nav--mobile box-border fixed inset-0 h-screen z-[9999] rounded-[32px] bg-gradient-to-b from-[#00A9FF] to-[#E5E5E5]">
           <ul className="flex flex-col justify-center items-center gap-[30px] list-none pl-[0]">
             <li className="text-center">
               <a href="/about" className="nav__link text-[var(--color-font-primary)] text-[42px] no-underline">About me</a>
