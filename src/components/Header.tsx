@@ -30,10 +30,9 @@ export default function Header({ onToggleTheme }: { onToggleTheme: () => void })
       </nav>
       <div className="flex items-center gap-4">
         <button
-          className="burger-menu flex flex-col justify-between w-[51px] h-[51px] focus:outline-none border-none bg-transparent cursor-pointer z-[1000]"
+          className="burger-menu flex flex-col justify-between w-[51px] h-[51px] focus:outline-none border-none bg-transparent cursor-pointer p-[0] z-[1000]"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-
           <svg
             width="51"
             height="51"

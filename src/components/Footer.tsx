@@ -99,7 +99,7 @@ export default function Footer() {
           </svg>
         </Link> */}
 
-        <button onClick={() => router.push(nextRoute)} aria-label="Next page" className="border-none cursor-pointer bg-transparent">
+        <button onClick={() => router.push(nextRoute)} aria-label="Next page" className="border-none cursor-pointer bg-transparent p-[0]">
           <svg
             width="51"
             height="51"
