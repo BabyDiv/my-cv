@@ -14,8 +14,8 @@ export default function Footer() {
   const nextRoute = routes[nextIndex];
 
   return (
-    <footer className="w-full">
-      <div className="flex w-full justify-between items-end">
+    <footer className="footer w-full">
+      <div className="footer__container flex w-full justify-between items-end">
         {isAboutPage ? (
           <svg
             width="123"
