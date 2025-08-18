@@ -9,7 +9,7 @@ export default function ContactsContent() {
         <p className="uppercase text-[var(--color-font-primary)] font-[400] tracking-[-0.1em] passage">You</p>
       </div>
       <div>
-        <img src="/dog.svg" alt="dog"></img>
+        <img src="/dog.svg" className="dog" alt="dog"></img>
       </div>
     </section>
   )
