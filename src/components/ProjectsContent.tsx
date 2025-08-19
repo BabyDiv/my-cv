@@ -44,7 +44,7 @@ export default function ProjectsContent() {
           </svg>
         </button>
       </div>
-      <ul className="projects__list flex flex-row text-[var(--color-font-primary)] pl-[0] px-[16px] list-none scrollbar-hide overflow-x-auto snap-x snap-mandatory gap-[20px]" ref={listRef}>
+      <ul className="projects__list flex flex-row text-[var(--color-font-primary)] pl-[0] list-none scrollbar-hide overflow-x-auto snap-x snap-mandatory gap-[20px]" ref={listRef}>
         <li className="bg-[#97BAF9] p-[33px] rounded-[32px] min-w-[80%] snap-start">
           <article className="projects__item">
             <h2 className="projects__title font-[400] text-center">
