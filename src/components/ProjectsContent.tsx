@@ -1,9 +1,51 @@
+import { useRef } from 'react';
+
 export default function ProjectsContent() {
+
+  const listRef = useRef<HTMLUListElement>(null);
+
+  const scrollLeft = () => {
+    listRef.current?.scrollBy({
+      left: -300, behavior: 'smooth'
+    })
+  }
+
+  const scrollRight = () => {
+    listRef.current?.scrollBy({
+      left: 300, behavior: 'smooth'
+    })
+  }
+
   return (
     <section className="projects justify-around items-center">
       <h1 className="sr-only">Projects</h1>
-      <ul className="projects__list flex text-[var(--color-font-primary)] pl-[0] list-none">
-        <li className="bg-[#97BAF9] p-[33px] rounded-[32px]">
+
+      <div className="flex projects__buttons justify-between items-center px-4 absolute inset-x-0 top-[78%] right-[10%] -translate-y-1/2 z-10">
+        <button onClick={scrollLeft} className="bg-transparent p-2 rounded-full border-none shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none" className="border-[1px] cursor-pointer border-[#FFFFFF] rounded-[32px]">
+            <g clip-path="url(#a)"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.13" d="m29.997 17-8.355 8.358L30 33.714"/>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M51 0H0v51h51z"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button onClick={scrollRight} className="bg-transparent p-2 rounded-full border-none shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none" className="border-[1px] cursor-pointer border-[#FFFFFF] rounded-[32px]">
+            <g clip-path="url(#a)"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.13" d="m21.003 17 8.355 8.358L21 33.714"/>
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h51v51H0z"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+      <ul className="projects__list flex flex-row text-[var(--color-font-primary)] pl-[0] px-[16px] list-none scrollbar-hide overflow-x-auto snap-x snap-mandatory gap-[20px]" ref={listRef}>
+        <li className="bg-[#97BAF9] p-[33px] rounded-[32px] min-w-[80%] snap-start">
           <article className="projects__item">
             <h2 className="projects__title font-[400] text-center">
               QuestMeUp
@@ -50,7 +92,7 @@ export default function ProjectsContent() {
           </article>
         </li>
 
-        <li className="bg-[#EBA97D] p-[33px] rounded-[32px]">
+        <li className="bg-[#EBA97D] p-[33px] rounded-[32px] min-w-[80%] snap-start">
           <article className="projects__item">
             <h2 className="projects__title font-[400] text-center">
             CGM Export
@@ -98,7 +140,7 @@ export default function ProjectsContent() {
           </article>
         </li>
 
-        <li className="bg-[#7A90EF] p-[33px] rounded-[32px]">
+        <li className="bg-[#7A90EF] p-[33px] rounded-[32px] min-w-[80%] snap-start">
           <article className="projects__item">
             <h2 className="projects__title font-[400] text-center">
               MCQ

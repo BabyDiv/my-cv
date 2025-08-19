@@ -220,11 +220,20 @@ body {
 }
 
 .projects__list {
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 24px;
 
   @media (min-width: 1064px) {
-    flex-direction: row;
+    overflow: visible;
+    justify-content: center;
+    scroll-snap-type: none;
+  }
+
+  li {
+    @media (min-width: 1064px) {
+      min-width: 10%;
+    }
   }
 }
 
@@ -248,7 +257,15 @@ body {
   font-size: 32px;
 
   @media (min-width: 768px) {
-    font-size: 48px;
+    font-size: 42px;
+  }
+}
+
+.projects__buttons {
+  display: flex;
+
+  @media (min-width: 1064px) {
+    display: none;
   }
 }
 
@@ -271,3 +288,13 @@ body {
     height: 215px;
   }
 }
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
