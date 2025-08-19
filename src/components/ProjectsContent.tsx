@@ -20,7 +20,7 @@ export default function ProjectsContent() {
     <section className="projects justify-around items-center">
       <h1 className="sr-only">Projects</h1>
 
-      <div className="flex projects__buttons justify-between items-center px-4 absolute inset-x-0 top-[78%] right-[10%] -translate-y-1/2 z-10">
+      <div className="flex projects__buttons justify-between items-center px-4 absolute inset-x-0 top-[50%] right-[0%] left-[0%] -translate-y-1/2 z-10">
         <button onClick={scrollLeft} className="bg-transparent p-2 rounded-full border-none shadow-md">
           <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" fill="none" className="border-[1px] cursor-pointer border-[#FFFFFF] rounded-[32px]">
             <g clip-path="url(#a)"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.13" d="m29.997 17-8.355 8.358L30 33.714"/>
