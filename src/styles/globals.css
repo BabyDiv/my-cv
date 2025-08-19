@@ -298,3 +298,24 @@ body {
   display: none;
 }
 
+.bg-projects-light {
+  background-image: image-set(
+    url('/background@1x.png') 1x,
+    url('/background@2x.png') 2x,
+    url('/background@3x.png') 3x
+  ), linear-gradient(to bottom, #00A9FF 0%, #E5E5E5 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg-projects-dark {
+  background-image: image-set(
+    url('/background@1x.png') 1x,
+    url('/background@2x.png') 2x,
+    url('/background@3x.png') 3x
+  ), linear-gradient(to bottom, #121212 0%, #3a3a3a 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
