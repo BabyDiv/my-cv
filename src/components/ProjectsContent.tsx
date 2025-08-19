@@ -44,7 +44,11 @@ export default function ProjectsContent() {
           </svg>
         </button>
       </div>
-      <ul className="projects__list flex flex-row text-[var(--color-font-primary)] pl-[0] list-none scrollbar-hide overflow-x-auto snap-x snap-mandatory gap-[20px]" ref={listRef}>
+      <ul 
+        className="projects__list flex flex-row text-[var(--color-font-primary)] pl-[0] list-none scrollbar-hide overflow-x-auto snap-x snap-mandatory gap-[20px]" 
+        ref={listRef}
+        style={{ scrollPaddingInline: '16px' }}
+      >
         <li className="bg-[#97BAF9] p-[33px] rounded-[32px] min-w-[80%] snap-start">
           <article className="projects__item">
             <h2 className="projects__title font-[400] text-center">
@@ -55,7 +59,6 @@ export default function ProjectsContent() {
               integrating front-end logic using JS, implementing it into PHP, ensuring seamless communication with the back-end API. 
             </p>
             <div className="w-full h-[1px] bg-[var(--color-font-primary)]"></div>
-
             <div className="flex flex-row justify-between items-center flex-wrap">
               <div className="my-[18px] flex flex-row gap-[4px] items-center flex-wrap">
                 <div
