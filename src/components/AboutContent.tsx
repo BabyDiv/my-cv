@@ -8,7 +8,7 @@ export default function AboutContent() {
         I believe that frontend development is not just about making things look beautiful—it’s about crafting seamless, accessible, and intuitive user experiences
       </p>
       <p className="about__text text-[var(--color-font-primary)] font-[300]">
-        I have 1,5 years of experience working as a frontend developer at <span className="font-[400] text-[#00A9FF]">Perspectiva-M</span> company, 
+        I have 2 years of experience working as a frontend developer at <span className="font-[400] text-[#00A9FF]">Perspectiva-M</span> company, 
         and I also worked on freelance projects, for example 4 month of working at educational platform <span className="font-[400] text-[#00A9FF]">QuestMeUp,</span> where I contributed to building the user interface
       </p>
       <p className="about__text text-[var(--color-font-primary)] font-[300]">
